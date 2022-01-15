@@ -1,0 +1,23 @@
+<html>
+<head> <title> GPIO Control Web App</title>
+<link rel="styleSheet" href="/static/style.css"/>
+</head>
+<body>
+<h1>Actuators</h1><br>
+<h2>Status</h2>
+<h3> RED LED: {{ledRed}}</h3>
+<h3> YELLOW LED: {{ledYellow}}</h3>
+<h3> GREEN LED: {{ledGreen}}</h3><br>
+<h2>Led Control</h2>
+<h3> RED LED CNTRL ==> {% if ledRed == 0 %}<a href ="/ledRed/on" class="button">TURN
+ON</a>{% endif %}{% if ledRed == 1 %}
+<a href="/ledRed/off" class = "button">TURN OFF</a>{% endif %}</h3>
+<h3> YELLOW LED CNTRL ==> {% if ledYellow == 0 %}<a href="/ledYellow/on"
+class="button">TURN ON</a>{% endif %}{% if ledYellow == 1 %}
+<a href="/ledYellow/off" class="button">TURN OFF</a>{% endif %}</h3>
+<h3> GREEN LED CNTRL ==> {% if ledGreen == 0 %}<a href="/ledGreen/on"
+class="button">TURN ON</a>{% endif %}
+{% if ledGreen == 1 %}<a href="/ledGreen/off" class="button">TURN OFF</a>{% endif %}</h3>
+</body>
+</html>
+
